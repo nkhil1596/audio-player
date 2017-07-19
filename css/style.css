@@ -1,0 +1,169 @@
+*{
+     margin:0;
+	 padding:0;
+	 border:0;
+	 outline:none;
+}
+
+body{
+     font-family:"Arial", sans-serif;
+	 font-size:13px;
+     line-height:1.5em;
+	 color:#fff;
+	 background:url("https://c1.staticflickr.com/6/5028/5877624092_90cb48e6e3_b.jpg");
+}
+
+.clearfix{
+	clear:both;
+}
+
+#container{
+	width:330px;
+	min-height:400px;
+	background:#333;
+	overflow:auto;
+	margin:60px auto;
+	border:#666 solid 2px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+#audio-img{
+	position:relative;
+	overflow:hidden;
+	height:200px;
+	margin-bottom:15px;
+}
+
+.cover{
+	width:100%;
+	z-index:1
+}
+
+#audio-info{
+	text-align:center;
+}
+
+#audio-info.artist{
+	font-weight:bold;
+}
+
+input#volume{
+	width:95%;
+    -webkit-appearance:none !important;
+	margin-left:2%;
+	background:#ccc;
+	height:1px;
+	margin-bottom:20px;
+}
+
+input#volume::-webkit-slider-thumb{
+    -webkit-appearance:none !important;
+    background:url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcS9ZGjMH1Zw8soX3k-7B8psFec-b4DwAKYHkkeTSsSx8KFNUFhmCixVeg");
+	background-size:cover;
+	height:12px;
+	width:12px;
+}
+
+#audio-buttons{
+	width:90%;+
+	display:block;
+	margin:15px auto;
+	margin-left:23px;
+	overflow:auto;
+
+}
+
+button#play{
+	background:url("http://be.buildingengines.com/rs/360-CEB-233/images/black-play-button.gif") no-repeat;
+	background-size:cover;
+	height:80px;
+	width:80px;
+	float:left;
+}
+
+button#pause{
+	background:url("http://gsfmtools4learning.weebly.com/uploads/1/2/0/1/12011841/2024664_orig.png") no-repeat;
+	background-size:cover;
+	width:80px;
+	height:80px;
+	float:left;
+}
+
+button#stop{
+	width:80px;
+	height:80px;
+	background:url("http://cdn.mysitemyway.com/etc-mysitemyway/icons/legacy-previews/icons/glossy-black-3d-buttons-icons-media/002116-glossy-black-3d-button-icon-media-a-media28-stop.png") no-repeat;
+    background-size:cover;
+	float:left;
+}
+
+button#prev{
+	width:80px;
+	height:80px;
+	background:url("http://www.sadloversandgiants.net/images/previous_btn.png") no-repeat;
+	background-size:cover;
+	float:left;
+}
+button#next{
+	width:80px;
+	height:80px;
+	background:url("http://www.clker.com/cliparts/1/L/h/a/w/8/next-md.png") no-repeat;
+	background-size:cover;
+	
+	float:right;
+}
+#playlist{
+	list-style:none;
+	padding:10px;
+}
+
+#playlist li{
+	cursor:pointer;
+	margin:5px;
+} 
+
+#playlist li.active{
+	font-weight:bold;
+	padding:3px;
+	background:#666;
+	
+}
+
+#progressbar{
+	width:80%;
+	margin-left:2%;
+	margin-bottom:20%;
+	margin-top:9px;
+	height:10px;
+	background:url("https://conceptdraw.com/a2656c3/p4/preview/640/pict--menu-bar-background-menus-vector-stencils-library") no-repeat;
+	background-size:cover;
+	background-position:center;
+	float:left;
+}
+
+#progress{
+	background:url("https://css-tricks.com/wp-content/uploads/2013/08/reset-progress-bar.png")no-repeat;
+	background-size:cover;
+	background-position:center;
+	height:10px;
+	display:inline-block;
+}
+
+#duration{
+	position:absolute;
+	top:0;
+	right:10px;
+	padding:4px 8px;
+	background:#000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	
+}
+
+#tracker{
+	position:relative;
+	width:100%;
+	
+}
